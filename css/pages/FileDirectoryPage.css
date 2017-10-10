@@ -46,6 +46,9 @@
 .child-list a .file-icon.file-xls		{ background-image:url(/iq-filedirectorypage/images/file-xls.png); }
 .child-list a .file-icon.file-xlsx		{ background-image:url(/iq-filedirectorypage/images/file-xlsx.png); }
 .child-list a .file-icon.file-zip		{ background-image:url(/iq-filedirectorypage/images/file-zip.png); }
+.child-list a .file-icon.file-step		{ background-image:url(/iq-filedirectorypage/images/file-step.png); }
+.child-list a .file-icon.file-dwg		{ background-image:url(/iq-filedirectorypage/images/file-dwg.png); }
+.child-list a .file-icon.file-dxf		{ background-image:url(/iq-filedirectorypage/images/file-dxf.png); }
 
 .pagination								{ margin:10px 0 0 0 !important; font-size:15px; text-align:center; }
 

@@ -5,18 +5,25 @@ class FileDirectoryPage extends Page
 	private static $icon = 'iq-filedirectorypage/images/file-directory-page.png';
 	private static $upload_directory = 'directory-files';
 	
+	private static $has_one = array(
+		'CustomIcon' => 'Image'
+	);
+	
 	private static $many_many = array(
 		'Files' => 'File'
 	);
 	
 	private static $allowed_children = array(
-		'FileDirectoryPage'
+		'FileDirectoryPage',
+		'Page'
 	);
 	
 	public function getCMSFields()
 	{
 		$fields = parent::getCMSFields();
-		$uploadDirectory = Folder::get()->filter(array('Name' => $this->Config()->get('upload_directory'),'ParentID' => '0'))->First();
+		$fields->addFieldToTab('Root.Main', UploadField::create('CustomIcon','Custom Icon')
+			->setAllowedExtensions(array('jpg','jpeg','png','gif')) );
+		$uploadDirectory = Folder::find_or_make($this->Config()->get('upload_directory'));
 		$fields->addFieldToTab('Root.Files', HeaderField::create('filesnote','These files will be listed when this page is viewed. You may select existing files that are displayed on another page as well. Enter the file name in the search field, select the file, and click "Link Existing"',4) );
 		$fields->addFieldToTab('Root.Files', GridField::create(
 			'Files',

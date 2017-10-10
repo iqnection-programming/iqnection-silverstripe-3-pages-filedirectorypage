@@ -13,7 +13,11 @@
 			<% loop $Children %>
 				<li>
 					<a href="$Link">
-						<img src="/iq-filedirectorypage/images/dir-icon.png" alt="$Title" />
+						<% if $CustomIcon.Exists %>
+							<img src="$CustomIcon.Fit(200,200).URL" alt="$Title" />
+						<% else %>
+							<img src="/iq-filedirectorypage/images/dir-icon.png" alt="$Title" />
+						<% end_if %>
 						<span>$Title</span>
 					</a>
 				</li>
@@ -28,7 +32,7 @@
 			<% loop $PagedFiles %>
 				<li>
 					<a href="$SecureDownloadLink">
-						<div class="file-icon file-{$getExtension}"></div>
+						<div class="file-icon file-{$getExtension.LowerCase}"></div>
 						<span>$Title</span>
 					</a>
 				</li>
