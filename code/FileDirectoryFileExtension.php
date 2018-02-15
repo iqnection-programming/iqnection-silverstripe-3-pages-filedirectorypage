@@ -1,10 +1,18 @@
 <?php
 
-class FileDirectory_File_Extension extends DataExtension
+use SilverStripe\ORM;
+use SilverStripe\Control;
+
+class FileDirectoryFileExtension extends ORM\DataExtension
 {
-	private static $belongs_many_many = array(
-		'FileDirectoryPages' => 'FileDirectoryPage'
-	);
+	private static $belongs_many_many = [
+		'FileDirectoryPages' => FileDirectoryPage::class
+	];
+	
+	public function FullSourcePath()
+	{
+		return Control\Director::baseFolder() . $this->owner->getSourceURL();
+	}
 	
 	public function SecureDownloadLink()
 	{
@@ -13,7 +21,7 @@ class FileDirectory_File_Extension extends DataExtension
 			if ($User = ProtectedAreaUser::CurrentSiteUser())
 			{
 				$downloadHash = md5(md5($User->UserHash).md5($this->owner->ID).md5($this->owner->Created));
-				$Controller = Controller::curr();
+				$Controller = Control\Controller::curr();
 				return $Controller->Link('secure_download/'.$downloadHash);
 			}
 		}

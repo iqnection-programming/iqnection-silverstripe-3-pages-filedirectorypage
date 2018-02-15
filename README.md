@@ -1,5 +1,5 @@
-# iqnection-silverstripe-3-pages-filedirectorypage
-SilverStripe 3 File Directory Page
+# iqnection-silverstripe-pages-filedirectorypage
+SilverStripe File Directory Page
 
 displays files to the public for download
 
