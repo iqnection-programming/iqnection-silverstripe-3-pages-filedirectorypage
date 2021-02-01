@@ -3,5 +3,5 @@ Name: iqfiledirectorypage
 ---
 SilverStripe\Assets\File:
   extensions:
-    - FileDirectoryFileExtension
+    - IQnection\FileDirectory\Extensions\FileDirectoryFileExtension
 ---

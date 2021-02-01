@@ -16,7 +16,7 @@
 						<% if $CustomIcon.Exists %>
 							<img src="$CustomIcon.Fit(200,200).URL" alt="$Title" />
 						<% else %>
-							<img src="/iq-filedirectorypage/images/dir-icon.png" alt="$Title" />
+							<img src="$resourceURL('iqnection-pages/filedirectorypage:client/images/dir-icon.png')" alt="$Title" />
 						<% end_if %>
 						<span>$Title</span>
 					</a>
