@@ -7,6 +7,7 @@ use SilverStripe\Control\Director;
 use SilverStripe\Control\Controller;
 use IQnection\FileDirectory\FileDirectoryPage;
 use IQnection\ProtectedArea\Model\ProtectedAreaUser;
+use SilverStripe\Assets\File;
 
 class FileDirectoryFileExtension extends DataExtension
 {
@@ -16,7 +17,7 @@ class FileDirectoryFileExtension extends DataExtension
 
 	public function FullSourcePath()
 	{
-		return Director::baseFolder() . $this->owner->getSourceURL();
+		return Director::getAbsFile(File::join_paths(PUBLIC_DIR, $this->owner->getSourceURL()));
 	}
 
 	public function SecureDownloadLink()

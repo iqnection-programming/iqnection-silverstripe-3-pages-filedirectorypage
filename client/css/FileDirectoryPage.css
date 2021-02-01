@@ -11,7 +11,7 @@
 .child-list li							{ display:inline-block; margin:0; padding:0; width:120px; vertical-align:top; }
 .child-list li a						{ padding:6px; display:block; border-radius:10px; border:1px solid transparent; }
 .child-list li a:hover					{ text-decoration:none; background:#efefef; border-color:#dfdfdf; }
-.child-list li a .file-icon				{ background: url(/resources/client/images/file-icon.png) center center no-repeat; background-size:contain; }
+.child-list li a .file-icon				{ background: url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-icon.png) center center no-repeat; background-size:contain; }
 .child-list li a .file-icon:before		{ content:''; display:block; padding-top:100%; }
 .child-list li a span					{ display:block; text-align:center; font-size:14px; line-height:1.05em; margin:6px 0 0; }
 
@@ -22,33 +22,33 @@
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease; }
 
-.child-list a .file-icon.file-ai		{ background-image:url(/resources/client/images/file-ai.png); }
-.child-list a .file-icon.file-doc		{ background-image:url(/resources/client/images/file-doc.png); }
-.child-list a .file-icon.file-docx		{ background-image:url(/resources/client/images/file-docx.png); }
-.child-list a .file-icon.file-eps		{ background-image:url(/resources/client/images/file-eps.png); }
-.child-list a .file-icon.file-exe		{ background-image:url(/resources/client/images/file-exe.png); }
-.child-list a .file-icon.file-gif		{ background-image:url(/resources/client/images/file-gif.png); }
-.child-list a .file-icon.file-jpeg		{ background-image:url(/resources/client/images/file-jpeg.png); }
-.child-list a .file-icon.file-jpg		{ background-image:url(/resources/client/images/file-jpeg.png); }
-.child-list a .file-icon.file-mov		{ background-image:url(/resources/client/images/file-mov.png); }
-.child-list a .file-icon.file-mp3		{ background-image:url(/resources/client/images/file-mp3.png); }
-.child-list a .file-icon.file-pdf		{ background-image:url(/resources/client/images/file-pdf.png); }
-.child-list a .file-icon.file-png		{ background-image:url(/resources/client/images/file-png.png); }
-.child-list a .file-icon.file-ppt		{ background-image:url(/resources/client/images/file-ppt.png); }
-.child-list a .file-icon.file-pptx		{ background-image:url(/resources/client/images/file-pptx.png); }
-.child-list a .file-icon.file-psd		{ background-image:url(/resources/client/images/file-psd.png); }
-.child-list a .file-icon.file-pub		{ background-image:url(/resources/client/images/file-pub.png); }
-.child-list a .file-icon.file-rar		{ background-image:url(/resources/client/images/file-rar.png); }
-.child-list a .file-icon.file-tiff		{ background-image:url(/resources/client/images/file-tiff.png); }
-.child-list a .file-icon.file-wav		{ background-image:url(/resources/client/images/file-wav.png); }
-.child-list a .file-icon.file-wma		{ background-image:url(/resources/client/images/file-wma.png); }
-.child-list a .file-icon.file-wmv		{ background-image:url(/resources/client/images/file-wmv.png); }
-.child-list a .file-icon.file-xls		{ background-image:url(/resources/client/images/file-xls.png); }
-.child-list a .file-icon.file-xlsx		{ background-image:url(/resources/client/images/file-xlsx.png); }
-.child-list a .file-icon.file-zip		{ background-image:url(/resources/client/images/file-zip.png); }
-.child-list a .file-icon.file-step		{ background-image:url(/resources/client/images/file-step.png); }
-.child-list a .file-icon.file-dwg		{ background-image:url(/resources/client/images/file-dwg.png); }
-.child-list a .file-icon.file-dxf		{ background-image:url(/resources/client/images/file-dxf.png); }
+.child-list a .file-icon.file-ai		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-ai.png); }
+.child-list a .file-icon.file-doc		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-doc.png); }
+.child-list a .file-icon.file-docx		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-docx.png); }
+.child-list a .file-icon.file-eps		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-eps.png); }
+.child-list a .file-icon.file-exe		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-exe.png); }
+.child-list a .file-icon.file-gif		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-gif.png); }
+.child-list a .file-icon.file-jpeg		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-jpeg.png); }
+.child-list a .file-icon.file-jpg		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-jpeg.png); }
+.child-list a .file-icon.file-mov		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-mov.png); }
+.child-list a .file-icon.file-mp3		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-mp3.png); }
+.child-list a .file-icon.file-pdf		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-pdf.png); }
+.child-list a .file-icon.file-png		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-png.png); }
+.child-list a .file-icon.file-ppt		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-ppt.png); }
+.child-list a .file-icon.file-pptx		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-pptx.png); }
+.child-list a .file-icon.file-psd		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-psd.png); }
+.child-list a .file-icon.file-pub		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-pub.png); }
+.child-list a .file-icon.file-rar		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-rar.png); }
+.child-list a .file-icon.file-tiff		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-tiff.png); }
+.child-list a .file-icon.file-wav		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-wav.png); }
+.child-list a .file-icon.file-wma		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-wma.png); }
+.child-list a .file-icon.file-wmv		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-wmv.png); }
+.child-list a .file-icon.file-xls		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-xls.png); }
+.child-list a .file-icon.file-xlsx		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-xlsx.png); }
+.child-list a .file-icon.file-zip		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-zip.png); }
+.child-list a .file-icon.file-step		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-step.png); }
+.child-list a .file-icon.file-dwg		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-dwg.png); }
+.child-list a .file-icon.file-dxf		{ background-image:url(/resources/vendor/iqnection-pages/filedirectorypage/client/images/file-dxf.png); }
 
 .pagination								{ margin:10px 0 0 0 !important; font-size:15px; text-align:center; }
 

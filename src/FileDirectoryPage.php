@@ -4,6 +4,7 @@ namespace IQnection\FileDirectory;
 
 use SilverStripe\Forms;
 use SilverStripe\Assets\File;
+use SilverStripe\Assets\Image;
 use SilverStripe\Assets\Folder;
 use SilverStripe\Core\Injector\Injector;
 
