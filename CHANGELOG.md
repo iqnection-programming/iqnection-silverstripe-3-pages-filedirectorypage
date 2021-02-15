@@ -2,6 +2,9 @@
 # Change Log
 
 
+## [2.1.1]
+- corrected CSS resources path
+
 ## [2.1.0]
 - Updated with namespacing
 
