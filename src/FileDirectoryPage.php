@@ -10,6 +10,7 @@ use SilverStripe\Core\Injector\Injector;
 
 class FileDirectoryPage extends \Page
 {
+	private static $table_name = 'FileDirectoryPage';
 	private static $icon = 'iqnection-pages/filedirectorypage:client/images/file-directory-page.png';
 	private static $upload_directory = 'directory-files';
 
